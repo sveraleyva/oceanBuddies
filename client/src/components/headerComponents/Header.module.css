@@ -1,0 +1,14 @@
+.header {
+  position: absolute;
+  display: flex;
+  padding: 0;
+  z-index: 1;
+  width: 100%;
+  margin-top: -15px;
+}
+
+.logo {
+  display: flex;
+  width: 50%;
+  margin-left: 20px;
+}

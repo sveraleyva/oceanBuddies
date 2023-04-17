@@ -1,0 +1,39 @@
+.animation {
+  animation: picture-appear 1s ease-out forwards;
+}
+
+.animation2 {
+  animation: picture2-appear 1s ease-out forwards;
+}
+@keyframes picture-appear {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes picture2-appear {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .animation {
+    animation: none;
+  }
+  .animation2 {
+    animation: none;
+  }
+}

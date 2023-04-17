@@ -1,0 +1,53 @@
+.glass {
+  padding: 13px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.3px);
+  -webkit-backdrop-filter: blur(3.3px);
+  border: 1px solid rgba(255, 255, 255, 0.31);
+  border-radius: 15px;
+}
+
+.headernav {
+  display: flex;
+  flex: 50%;
+  justify-content: flex-end;
+  margin-top: -40px;
+}
+
+.mobileNav {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .headernav {
+    display: none;
+  }
+  .mobileNav {
+    display: flex;
+    align-items: center;
+  }
+  .hamburger {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    cursor: pointer;
+    margin-top: -20px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80%;
+    right: 0%;
+    width: 100%;
+    background-color: rgb(59 130 246);
+    border-top: 2px solid #0b2447;
+  }
+  ul {
+    z-index: 1;
+  }
+  .contact-card {
+    padding: 0px;
+  }
+}
